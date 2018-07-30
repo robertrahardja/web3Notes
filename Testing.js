@@ -8,6 +8,7 @@ var web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"))
 
 const fromAddress = "0xe43C78D27359a96cc2d641F66914FA3440fC7506";
 
+//for contract variable changes, account needs to be unlocked
 web3.eth.defaultAccount = fromAddress
 web3.personal.unlockAccount(web3.eth.defaultAccount)
 
